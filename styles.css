@@ -890,14 +890,15 @@ textarea:focus {
   }
 
   h1 {
-    max-width: 235px;
-    font-size: clamp(1.9rem, 8.2vw, 2.48rem);
+    max-width: 248px;
+    margin-bottom: 24px;
+    font-size: clamp(2.15rem, 9vw, 2.78rem);
   }
 
   .hero-logo {
-    width: 70px;
-    height: 70px;
-    margin-bottom: 16px;
+    width: 82px;
+    height: 82px;
+    margin-bottom: 20px;
   }
 
   .footer-inner {
@@ -920,28 +921,36 @@ textarea:focus {
   }
 
   .hero-copy {
-    max-width: 232px;
+    max-width: 248px;
     min-height: calc(100svh - 118px);
-    padding: 18px 0 96px;
+    padding: 28px 0 116px;
+  }
+
+  .hero .eyebrow {
+    margin-bottom: 16px;
+    font-size: 0.86rem;
+    line-height: 1.35;
   }
 
   .hero-subtitle {
-    max-width: 220px;
-    font-size: 0.92rem;
+    max-width: 236px;
+    font-size: 0.98rem;
+    line-height: 1.58;
   }
 
   .hero .actions {
-    max-width: 205px;
+    max-width: 222px;
+    margin-top: 34px;
     flex-direction: column;
-    gap: 10px;
+    gap: 13px;
   }
 
   .hero .btn {
     width: 100%;
-    min-height: 40px;
-    padding: 9px 12px;
-    font-size: 0.82rem;
-    line-height: 1.25;
+    min-height: 47px;
+    padding: 11px 14px;
+    font-size: 0.88rem;
+    line-height: 1.28;
     white-space: normal;
   }
 
