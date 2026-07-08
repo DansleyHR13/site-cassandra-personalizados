@@ -3,7 +3,7 @@ const nav = document.querySelector("[data-nav]");
 const form = document.querySelector("[data-form]");
 const whatsappLinks = document.querySelectorAll("[data-whatsapp]");
 
-const whatsappBase = "https://wa.me/";
+const whatsappBase = "https://wa.me/5531994452814";
 const defaultMessage = "Olá, Cassandra Personalizados! Gostaria de solicitar um orçamento.";
 
 whatsappLinks.forEach((link) => {
