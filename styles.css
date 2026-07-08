@@ -560,7 +560,7 @@ h3 {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: var(--gallery-bg);
+  background: var(--gallery-bg) var(--gallery-position, center) / cover no-repeat;
   transform: scale(1);
   transition: transform 520ms ease, filter 520ms ease;
 }
@@ -574,25 +574,12 @@ h3 {
 .gallery-visual::before {
   inset: 0;
   background:
-    linear-gradient(145deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0)),
-    radial-gradient(circle at 25% 22%, rgba(255, 255, 255, 0.95) 0 42px, transparent 43px),
-    radial-gradient(circle at 78% 78%, rgba(200, 163, 90, 0.22) 0 48px, transparent 49px),
-    repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.16) 0 2px, transparent 2px 14px);
+    linear-gradient(180deg, rgba(35, 44, 42, 0.02) 0%, rgba(35, 44, 42, 0.08) 52%, rgba(35, 44, 42, 0.34) 100%),
+    linear-gradient(145deg, rgba(255, 250, 241, 0.12), rgba(255, 255, 255, 0));
 }
 
 .gallery-visual::after {
-  width: 56%;
-  height: 58%;
-  left: 23%;
-  top: 18%;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 250, 241, 0.86)),
-    radial-gradient(circle at 50% 24%, rgba(159, 201, 197, 0.3) 0 22px, transparent 23px);
-  border: 1px solid rgba(200, 163, 90, 0.24);
-  border-radius: var(--radius);
-  box-shadow: 0 16px 30px rgba(93, 83, 63, 0.12);
-  transform: rotate(-5deg) translateY(0);
-  transition: transform 520ms ease;
+  display: none;
 }
 
 .gallery-item:hover .gallery-visual,
@@ -613,7 +600,7 @@ h3 {
   bottom: 18px;
   z-index: 2;
   padding: 12px 14px;
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: var(--radius);
   backdrop-filter: blur(12px);
@@ -652,12 +639,12 @@ h3 {
   opacity: 1;
 }
 
-.g1 { --gallery-bg: #dcefed; }
-.g2 { --gallery-bg: #f1dccd; }
-.g3 { --gallery-bg: #efe2bd; }
-.g4 { --gallery-bg: #d8e5da; }
-.g5 { --gallery-bg: #f4eee2; }
-.g6 { --gallery-bg: #d7ece7; }
+.g1 { --gallery-bg: url("assets/gallery-convites.jpg"); --gallery-position: center 58%; }
+.g2 { --gallery-bg: url("assets/gallery-caixinhas.jpg"); --gallery-position: center 56%; }
+.g3 { --gallery-bg: url("assets/gallery-tags.jpg"); --gallery-position: center 58%; }
+.g4 { --gallery-bg: url("assets/gallery-lembrancinhas.jpg"); --gallery-position: center 58%; }
+.g5 { --gallery-bg: url("assets/gallery-toppers.jpg"); --gallery-position: center 58%; }
+.g6 { --gallery-bg: url("assets/gallery-datas-especiais.jpg"); --gallery-position: center 58%; }
 
 .center {
   display: flex;
